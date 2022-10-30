@@ -1,0 +1,22 @@
+.hero-container {
+  min-height: 75vh;
+  margin-top: 90px;
+
+  background-image: url("/public/images/construction2.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(9, 6, 4);
+
+  opacity: 0.7;
+  z-index: 1;
+}
