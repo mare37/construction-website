@@ -1,10 +1,10 @@
-import { useState } from "react";
-import "../../index.css";
+import { useState, useEffect } from "react";
 
 import styles from "./navbar_css";
 
 function Navbar() {
   const [menuActive, setMenu] = useState(true);
+  const [onScroll, setOnScroll] = useState(true);
 
   /* const global = createUseStyles({
     "@global": {
@@ -17,6 +17,16 @@ function Navbar() {
   global();*/
   console.log("Page rendered");
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setOnScroll(false);
+      } else {
+        setOnScroll(true);
+      }
+    });
+  }, []);
+
   const classes = styles();
 
   const handleClick = () => {
@@ -27,15 +37,13 @@ function Navbar() {
 
   return (
     <div>
-      <div className={classes.headerWrapper}>
+      <div
+        className={onScroll ? classes.headerWrapper : classes.headerWrapper2}
+      >
         <div className={classes.header}>
           <nav className={classes.nav}>
             <div className={classes.logoName}>
-              <img
-                className={classes.logo}
-                src="./images/brick-wall.png"
-                alt="image"
-              />
+              <img className={classes.logo} src="" alt="image" />
               <div className={classes.logo_text}>
                 <h3>Waweru</h3>
                 <p>Constructions</p>

@@ -1,5 +1,8 @@
 import { createUseStyles } from "react-jss";
 
+const blue = "#202068";
+const orange = "#f9b904";
+
 const styles = createUseStyles({
   headerWrapper: {
     width: "100vw",
@@ -9,12 +12,17 @@ const styles = createUseStyles({
     left: "0",
     zIndex: "1",
   },
+
+  headerWrapper2: {
+    display: "none",
+  },
+
   header: {
-    height: "90px",
+    height: "70px",
     backgroundColor: "transparent",
   },
   nav: {
-    backgroundColor: "#202068",
+    backgroundColor: "transparent",
     height: "100%",
     position: "relative",
     zIndex: "4",
@@ -26,7 +34,8 @@ const styles = createUseStyles({
   listContainer: {
     width: "100vw",
     height: "500px",
-    backgroundColor: "#202068",
+    backgroundColor: "#838383",
+    opacity: "0.9",
     position: "absolute",
     display: "flex",
     flexDirection: "column",
@@ -34,10 +43,9 @@ const styles = createUseStyles({
     justifyContent: "space-around",
     top: "70px",
     right: "0",
-    borderTop: "solid",
-    borderTopColor: "#f9b904",
 
     transition: "1000ms ease",
+    listStyle: "none",
 
     "& li": {
       color: "white",
@@ -52,6 +60,7 @@ const styles = createUseStyles({
     right: "100%",
     zIndex: "3",
     paddingRight: "50px",
+    listStyle: "none",
   },
   menu: {
     height: "30px",
@@ -104,6 +113,7 @@ const styles = createUseStyles({
     padding: "10px",
     backgroundColor: "orange",
     width: "130px",
+    borderRadius: "3px",
   },
 
   "@media (min-width: 1200px)": {
@@ -136,7 +146,7 @@ const styles = createUseStyles({
       },
 
       "& li:hover": {
-        color: "yellow",
+        color: orange,
 
         borderBottomWidth: "3px",
         borderBottomColor: "yellow",

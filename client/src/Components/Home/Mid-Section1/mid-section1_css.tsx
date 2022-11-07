@@ -19,29 +19,30 @@ const styles = createUseStyles({
   textContainer: {},
   firstHeading: {
     color: "#f9b904",
-    fontWeight: "900",
+    fontWeight: "1000",
     marginBottom: "30px",
-    fontSize: "30px",
+    fontSize: "32px",
 
-    textAlign: "center",
+    textAlign: "left",
   },
   secondHeading: {
     color: blue,
-    fontWeight: "500",
+    fontWeight: "1000",
     marginBottom: "30px",
-    fontSize: "35px",
+    fontSize: "38px",
 
-    textAlign: "center",
+    textAlign: "left",
   },
   mainParagraph: {
-    color: "#50506c",
+    color: "gray",
     lineHeight: "30px",
     marginTop: "20px",
-    textAlign: "center",
+    textAlign: "left",
+    fontSize: "23px",
   },
   bulletingPoints: {
     marginTop: "30px",
-    paddingLeft: "20px",
+    marginLeft: "-80px",
 
     "& img": {
       height: "15px",
@@ -58,9 +59,11 @@ const styles = createUseStyles({
     "& p": {
       marginBottom: "15px",
       fontWeight: "700",
-      color: "#202068",
+      color: "gray",
     },
   },
+
+  buttonContainer: {},
 
   moreAboutUsButton: {
     marginTop: "20px",
@@ -71,7 +74,6 @@ const styles = createUseStyles({
     fontWeight: "700",
     border: "none",
     backgroundColor: "#202068",
-    marginLeft: "20px",
   },
 
   stats: {
@@ -89,11 +91,14 @@ const styles = createUseStyles({
     "& p": {
       color: blue,
       width: "150px",
+      textAlign: "left",
     },
 
     "& div": {
       marginBottom: "15px",
       marginRight: "10px",
+      display: "flex",
+      flexDirection: "column",
     },
   },
 
@@ -103,6 +108,7 @@ const styles = createUseStyles({
     objectFit: "none",
     objectPosition: "100px 30px",
     height: "250px",
+    width: "100%",
   },
 
   wrapper: {
@@ -114,8 +120,9 @@ const styles = createUseStyles({
 
   joinUs: {
     marginTop: "30px",
-    width: "70%",
-    height: "200px",
+    width: "200px",
+    borderRadius: "6px",
+
     backgroundColor: orange,
     padding: "20px",
 
@@ -137,6 +144,104 @@ const styles = createUseStyles({
     height: "50px",
     marginBottom: "10px",
     filter: "invert(100%)",
+  },
+
+  section2: {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+  },
+
+  "@media (min-width: 768px)": {
+    bulletingPoints: {
+      width: "80%",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-between",
+    },
+    image: {
+      height: "500px",
+    },
+  },
+
+  "@media (min-width: 1200px)": {
+    midSection1: {
+      flexDirection: "row",
+      marginTop: "100px",
+      paddingLeft: "100px",
+      paddingRight: "100px",
+    },
+    section1: {
+      width: "50%",
+    },
+    section2: {
+      width: "50%",
+    },
+
+    firstHeading: {
+      textAlign: "left",
+      fontSize: "25px",
+      width: "100%",
+      fontWeight: "500",
+      marginBottom: "15px",
+    },
+    secondHeading: {
+      textAlign: "left",
+      fontSize: "30px",
+    },
+    mainParagraph: {
+      textAlign: "left",
+    },
+    bulletingPoints: {
+      width: "100%",
+      paddingLeft: "0",
+      marginLeft: "0px",
+      justifyContent: "flex-start",
+      "& img": {},
+
+      "& span": {},
+
+      "& p": {
+        fontWeight: "500",
+      },
+      "& div": {
+        marginRight: "20px",
+      },
+    },
+
+    image: {
+      width: "80%",
+      height: "270px",
+    },
+    buttonContainer: {
+      width: "100%",
+    },
+    stats: {
+      width: "100%",
+      justifyContent: "flex-end",
+      marginRight: "70px",
+      "& p": {
+        textAlign: "left",
+      },
+      "& div": {
+        alignItems: "flex-start",
+      },
+    },
+    joinUs: {
+      width: "20%",
+      marginTop: "-90px",
+      marginRight: "250px",
+
+      "& h2": {
+        fontSize: "14px",
+      },
+    },
+    helmet: {
+      height: "30px",
+    },
+    arrow: {
+      height: "10px",
+    },
   },
 });
 

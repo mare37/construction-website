@@ -7,9 +7,9 @@ function Hero() {
     <div className={classes.hero}>
       <div className="hero-container">
         <div className={classes.textContainer}>
-          <p>Better, Bigger,Faster And Stronger Projects</p>
+          <p>SAMUEL MARTIN + PARTNERS</p>
 
-          <h1>Leading The Way In Building And Construction In Kenya</h1>
+          <h1>Quality, Excellence, Dependability</h1>
           <button>Our Services</button>
         </div>
       </div>

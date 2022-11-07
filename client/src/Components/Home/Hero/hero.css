@@ -1,8 +1,7 @@
 .hero-container {
-  min-height: 75vh;
-  margin-top: 90px;
+  min-height: 95vh;
 
-  background-image: url("/public/images/construction2.jpg");
+  background-image: url("/public/images/sittingroom.jpg");
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -17,6 +16,6 @@
   width: 100%;
   background-color: rgb(9, 6, 4);
 
-  opacity: 0.7;
+  opacity: 0.4;
   z-index: 1;
 }

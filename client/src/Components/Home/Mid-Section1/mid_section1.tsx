@@ -6,10 +6,12 @@ function MidSection1() {
     <div className={classes.midSection1}>
       <section className={classes.section1}>
         <p className={classes.firstHeading}>
-          Leading the way in building and civil construction
+          {`Leading the way in building 
+          and civil construction`}
         </p>
         <p className={classes.secondHeading}>
-          The soil survey and mapping for Ewaso Ngiro irrigation sub-project
+          Committed To Delivering High Quality Construction Projects And
+          Innovative Design
         </p>
         <p className={classes.mainParagraph}>
           The soil survey and mapping for Ewaso Ngiro irrigation sub-project,
@@ -60,17 +62,19 @@ function MidSection1() {
             </p>
           </div>
         </div>
-        <button className={classes.moreAboutUsButton}>More About Us</button>
+        <div className={classes.buttonContainer}>
+          <button className={classes.moreAboutUsButton}>More About Us</button>
+        </div>
       </section>
-      <section>
+      <section className={classes.section2}>
         <div className={classes.stats}>
           <div>
             <h1>18</h1>
-            <p>Projects Completed in 2022</p>
+            <p>Projects Completed</p>
           </div>
           <div>
             <h1>100</h1>
-            <p>Qulified Employees & Workers</p>
+            <p>Qualified Staff</p>
           </div>
         </div>
 
@@ -82,7 +86,7 @@ function MidSection1() {
               src="/images/helmet.png"
               alt="helmet"
             />
-            <h2>Join Us, Be Part Of Our Team</h2>
+            <h2>Our Team</h2>
 
             <span>
               <img
